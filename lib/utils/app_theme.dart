@@ -12,10 +12,17 @@ class AppTheme {
       labelMedium: GoogleFonts.poppins(
         fontSize: 16,
         fontWeight: FontWeight.w600,
+        color: Colors.black,
       ),
       labelLarge: GoogleFonts.poppins(
         fontSize: 18,
-        fontWeight: FontWeight.w600,
+        fontWeight: FontWeight.w500,
+        color: Colors.black,
+      ),
+      headlineSmall: GoogleFonts.poppins(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color: Colors.black,
       ),
       headlineLarge: GoogleFonts.poppins(
         fontSize: 18,
@@ -25,18 +32,20 @@ class AppTheme {
       headlineMedium: GoogleFonts.poppins(
         fontSize: 14,
         fontWeight: FontWeight.w500,
-      ),
-      headlineSmall: GoogleFonts.poppins(
-        fontSize: 12,
-        fontWeight: FontWeight.w500,
         color: Colors.black,
+      ),
+      titleSmall: GoogleFonts.poppins(
+        fontSize: 14,
+        fontWeight: FontWeight.w300,
       ),
     );
 
     return baseData.copyWith(
       primaryColor: Colors.white,
-      scaffoldBackgroundColor: AppColors.bgColor,
-      highlightColor: Colors.white,
+      scaffoldBackgroundColor: AppColors.greyBgColor,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.transparent,
       textTheme: newTextTheme,
     );
   }
